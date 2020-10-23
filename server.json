@@ -1,16 +1,19 @@
 {
   "categories": [
     { "id": "tshirts", "title": "T-shirts" },
-    { "id": "trousers", "title": "Trousers" }
+    { "id": "trousers", "title": "Trousers" },
+    { "id": "soks", "title": "Socks" }
   ],
   "products": [
     { "id": 1, "title": "T-shirt Front-end", "price": 79.9, "category_id": "tshirts", "slug": "tshirt-front-end"},
     { "id": 2, "title": "T-shirt CSS", "price": 69.9, "category_id": "tshirts", "slug": "tshirt-css"},
     { "id": 3, "title": "Trouser Node", "price": 129.9, "category_id": "trousers", "slug": "trouser-node"},
-    { "id": 4, "title": "Trouser React", "price": 109.9, "category_id": "trousers", "slug": "trouser-react"}
+    { "id": 4, "title": "Trouser React", "price": 109.9, "category_id": "trousers", "slug": "trouser-react"},
+    { "id": 5, "title": "Sock Next", "price": 10.9, "category_id": "socks", "slug": "sock-next"}
   ],
   "recommended": [
     { "id": 1, "title": "T-shirt Front-end", "price": 79.9, "category_id": "tshirts", "slug": "tshirt-front-end"},
-    { "id": 4, "title": "Trouser React", "price": 109.9, "category_id": "trousers", "slug": "trouser-react"}
+    { "id": 4, "title": "Trouser React", "price": 109.9, "category_id": "trousers", "slug": "trouser-react"},
+    { "id": 5, "title": "Sock Next", "price": 10.9, "category_id": "socks", "slug": "sock-next"}
   ]
 }
