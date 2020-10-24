@@ -2,7 +2,7 @@
   "categories": [
     { "id": "tshirts", "title": "T-shirts" },
     { "id": "trousers", "title": "Trousers" },
-    { "id": "soks", "title": "Socks" }
+    { "id": "socks", "title": "Socks" }
   ],
   "products": [
     { "id": 1, "title": "T-shirt Front-end", "price": 79.9, "category_id": "tshirts", "slug": "tshirt-front-end"},
