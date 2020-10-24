@@ -1,7 +1,9 @@
 import { GetServerSideProps } from 'next';
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 
-import { Title } from '../styles/pages/Home';
+import SEO from '@/components/SEO';
+
+import { Title } from '@/styles/pages/Home';
 
 interface IProduct {
   id: string;
@@ -30,6 +32,12 @@ export default function Home({recommendedProducts}: HomeProps) {
 
   return (
     <div>
+      <SEO
+        title="Home page"
+        image="boost.png"
+        shouldExcludeTitleSuffix
+      />
+
       <section>
         <Title>Products</Title>
 
@@ -48,7 +56,7 @@ export default function Home({recommendedProducts}: HomeProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const response = await fetch('http://localhost:3333/recommended');
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/recommended`);
   const recommendedProducts = await response.json();
   return { 
     props: {

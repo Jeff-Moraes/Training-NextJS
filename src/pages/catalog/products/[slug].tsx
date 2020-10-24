@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import { useState } from 'react';
 
 const AddToCartModal = dynamic(
-  () => import('../../../components/AddToCartModal'),
+  () => import('@/components/AddToCartModal'),
   { loading: () => <p>Loading...</p>, ssr: false }
   // loading => sets what should be displayed while the modal is loading.
   // ssr: false => makes the component gets rendered from the browser side instead of getting rendered from the server side.
