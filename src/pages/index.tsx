@@ -22,6 +22,12 @@ export default function Home({recommendedProducts}: HomeProps) {
   //   })
   // }, [])
 
+  const handleSum = async () => {
+    // dynamic import
+    const { math } = await import('../lib/math');
+    alert(math.sum(2,2))
+  }
+
   return (
     <div>
       <section>
@@ -35,6 +41,8 @@ export default function Home({recommendedProducts}: HomeProps) {
           ))}
         </ul>
       </section>
+
+      <button onClick={handleSum}>Sum</button>
     </div>
   )
 }
